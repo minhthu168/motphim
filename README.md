@@ -11,5 +11,6 @@ Team members include:
 Documetation included on the main folder:
 
 Intallation guide
-Database source : 'forum.sql'
-Documentation : 'review.docx'
+Database source : 'dbforum.sql'
+
+Documentation : 'Review.docx'
