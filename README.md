@@ -15,4 +15,4 @@ Documetation included on the main folder:
 Intallation guide
 Database source : 'dbforum.sql'
 
-Documentation : 'Review.docx'
+Documentation : 'Review.pdf'
