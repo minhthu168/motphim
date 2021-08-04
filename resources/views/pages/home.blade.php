@@ -92,7 +92,7 @@
             <div class="col-md-6" style="margin-bottom:20px;">
               <div class="col-xs-5 col-sm-5 col-md-4"><img src="{{url('images/topic/'.$item->topic_poster)}}" width="100%" height="120px" ></div>
               <div class="col-xs-7 col-sm-7 col-md-8">
-              <a style="font-weight: bold;font-size:150%;" href="">{{$item->topic_title}}</a>
+              <a style="font-weight: bold;font-size:150%;" href="{{url('pages/topic/detail/'.$item->topic_id)}}">{{$item->topic_title}}</a>
               <p style="color: #576069">{{$item->topic_date}}</p>
               </div> 
             </div>
