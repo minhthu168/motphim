@@ -1,5 +1,5 @@
 Mọt Phim
-Project semester 2 - FPT Aptech Teach used: PHP - Laravel - HTML/CSS/JS - AJAX - Bootstrap - Google Map Platform APis
+Project semester 2 - FPT Aptech Teach used: PHP - Laravel - HTML/CSS/JS- Bootstrap
 
 Team members include:
 
