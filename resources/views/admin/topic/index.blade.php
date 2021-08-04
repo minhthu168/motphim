@@ -2,7 +2,7 @@
 @section('title','topic-index')
 @section('main-content')
 <br>
-<h2 style="color: goldenrod; font-weight: bold">DANH SÁCH CHỦ ĐỀ PHIM</h2>
+<h2 style="color: goldenrod; font-weight: bold;text-align:center;">DANH SÁCH CHỦ ĐỀ PHIM</h2>
 <a href="{{url('admin/topic/approved')}}"><button type="submit" class="btn btn-primary">Duyệt chủ đề phim</button></a>
 <br><br>
 <table class="table table-hover table-striped" id="topic">
