@@ -66,9 +66,9 @@ class AccountController extends Controller
             return redirect()->route("adminuserlist")->with('loi','Chỉ áp dụng cho thành viên thường!!!');
         }else{
             //nguoc lai nghia la role la 3 thi doi role thanh 2
-        DB::table('tbuser')->where('user_id', $user_id)->where('user_role',3)
+        DB::table('tbuser')->where('user_id', $user_id)->where('user_role',3)->where('comment','>','10')
         ->update(["user_role" => '2']);
-        return redirect()->route("adminuserlist");}
+        return redirect()->route("adminuserlist")->with('loi','Chỉ áp dụng đối với thành viên có số lượng bình luận trên 10');}
     }
 
 /* ================================================================================ */
