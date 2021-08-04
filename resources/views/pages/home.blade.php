@@ -84,7 +84,7 @@
           </div>
       </div>
       <br><br>
-      <div class="container-fluid">
+      <div class="container">
           <h2 style="font-weight:bold; text-align:center; color:white">CHỦ ĐỀ MỚI</h2>
           <hr style="width:16%; text-align:center; color:gray; height: 0px; background-color: gray;">
           <div class="row" style="background-color:lightgray;padding:10px;" >
