@@ -4,19 +4,16 @@
 <div class="container-fluid" style="padding: 40px;">
     <div class="row">
     <div class=col-md-5>
-        <form action="{{ url('admin/film/category/createCat') }}" method="post" style="border:gray ridge 1px; padding:30px;margin:40px;">
-            {{ csrf_field() }}
-            <h3 style="text-align:center;color:blue;">Thêm thể loại mới</h3>
-                    @if ($message = Session::get('loi'))
+    @if ($message = Session::get('loi'))
                     <div class="alert alert-info alert-block">
                     <button type="button" class="close" data-dismiss="alert">×</button>
                     <strong>{{ $message }}</strong>
                     </div>
                     @endif
-            <div class="form-group">
-                <label >ID </label>
-                <input type="text" class="form-control" id="cat_id" name="cat_id">
-            </div>
+        <form action="{{ url('admin/film/category/createCat') }}" method="post" style="border:gray ridge 1px; padding:30px;margin:40px;">
+            {{ csrf_field() }}
+            <h3 style="text-align:center;color:blue;">Thêm thể loại mới</h3>
+                    
             <div class="form-group">
                 <label>Tên thể loại mới</label>
                 <input type="text" class="form-control" id="cat_name" name="cat_name">
