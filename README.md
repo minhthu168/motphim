@@ -12,7 +12,8 @@ Team members include:
 
 Documetation included on the main folder:
 
-Intallation guide
-Database source : 'dbforum.sql'
+1. Intallation guide: 'huongdancaidat_motphim.pdf'
+2. Database source : 'dbforum.sql'
 
-Documentation : 'Review.pdf'
+3. Documentation : 'Review.pdf'
+4. Link to video demonstration:https://youtu.be/ZuxG6IVHCTQ
