@@ -10,7 +10,7 @@ use App\Models\Comment;
 class TopicPageController extends Controller
 {
     public function index(){
-        $t = Topic::orderByDesc('topic_date')->Paginate(20);
+        $t = Topic::where('topic_approved','1')->orderByDesc('topic_date')->Paginate(20);
         return view('pages.topic.index_pagination', compact('t'));
     }
 
@@ -24,7 +24,7 @@ class TopicPageController extends Controller
     function chude($topic_id){
         DB:: update( 'update tbtopic set topic_view = topic_view +1 where topic_id = ?' ,[$topic_id]);//đếm lượt view
         $detail = Topic::find($topic_id);   
-        $t = Topic::orderByDesc('topic_date')->Paginate(7); 
+        $t = Topic::where('topic_approved','1')->orderByDesc('topic_date')->Paginate(7); 
         return view('pages.topic.detail', compact('detail','t'));
     }
     //tao comment tu frontend
