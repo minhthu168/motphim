@@ -16,4 +16,5 @@ Documetation included on the main folder:
 2. Database source : 'dbforum.sql'
 
 3. Documentation : 'Review.pdf'
-4. Link to video demonstration:https://youtu.be/ZuxG6IVHCTQ
+4. Powerpoint: 'Group1_T12008A0_MotPhim (1).pptx'
+5. Link to video demonstration:https://youtu.be/ZuxG6IVHCTQ
