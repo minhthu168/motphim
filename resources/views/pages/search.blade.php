@@ -20,7 +20,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding: 10px 6px">
             <hr>
             @foreach ($f as $item)
-            @foreach ($item->topic as $i)
+            @foreach ($item->topicApproved as $i)
             <div class="col-md-6" style="margin-bottom:20px;">
               <div class="col-xs-5 col-sm-5 col-md-4"><img src="{{url('images/topic/'.$i->topic_poster)}}" width="100%" height="120px" ></div>
               <div class="col-xs-7 col-sm-7 col-md-8">
