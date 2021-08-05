@@ -123,7 +123,7 @@ class FilmController extends Controller
         $r = $request->all();
         $name = $r['cat_name'];
         $c = Cat::where('cat_name','like',"%$name%")->get(); 
-        if(count($c)==1){
+        if(count($c)>=1){
             return redirect()->back()->with('loi','Thể loại này có rồi');
         }else{
             $cat = new Cat($r);
@@ -151,6 +151,10 @@ class FilmController extends Controller
         $id =$r['cat_id'];
         $c = Cat::find($id);
         $ten_cu =$c->cat_name;
+        $c = Cat::where('cat_name','like',"%$ten_cu%")->get(); 
+        if(count($c)>=1){
+            return redirect()->back()->with('loi','Thể loại này có rồi');
+        }
         $f = Film::where('film_cat','like',"%$ten_cu%")->get(); 
         if($f){
             foreach($f as $item){
@@ -169,7 +173,7 @@ class FilmController extends Controller
         $r = $request->all();
         $name = $r['nation_name'];
         $n = Nation::where('nation_name','like',"%$name%")->get(); 
-        if(count($n)==1){
+        if(count($n)>=1){
             return redirect()->back()->with('Loi','Quốc gia này có rồi');
         }else{
             $n = new Nation($r);
@@ -197,6 +201,9 @@ class FilmController extends Controller
         $id = $r['nation_id'];
         $n = Nation::find($id);
         $ten_cu = $n->nation_name;
+        $n = Nation::where('nation_name','like',"%$ten_cu%")->get(); 
+        if(count($n)>=1){
+            return redirect()->back()->with('Loi','Quốc gia này có rồi');}
         $f = Film::where('film_nation','like',"%$ten_cu%")->get(); 
         if($f){
             foreach($f as $item){
