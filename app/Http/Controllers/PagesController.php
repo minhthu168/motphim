@@ -110,6 +110,15 @@ class PagesController extends Controller
         if($r['film_form']==1 && $r['film_episode']!=1){
             return redirect()->back()->with('loi','Đây là phim chiếu rạp! Vui lòng nhập 1 tập');
         }
+        $title = Film::where('film_title','like',$r['film_title'])->get();
+        if(count($title)>=1){
+            foreach($title as $item){
+                $year =Film::where('film_release_year','like',$item->film_release_year)->get(); 
+                if(count($year)>=1){
+                    return redirect()->back()->with('loi','Phim này đã có rồi! Vui Lòng nhập phim khác!');
+                }              
+            }           
+        }
         $user=$request->session()->get('user');
         $category= implode(', ',$r['film_cat']);//ham chuyen mang thanh chuoi cach nhau boi dau ,
         $imgName = null;
