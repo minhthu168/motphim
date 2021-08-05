@@ -6,7 +6,7 @@
     <h2 style="color:blue;">ẢNH CAROUSEL</h2>
     <thead class="table-warning">
         <tr class="text-center">
-            <th>Tên</th>
+            <th>Mô tả ảnh</th>
             <th>Hình</th>
             <th>Chức năng</th>
         </tr>
